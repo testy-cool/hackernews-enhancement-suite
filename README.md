@@ -1,12 +1,31 @@
-Warning: Unmaintained
-============
-I don't have much desire to keep maintaining this project, so please don't create pull requests for any new features or anything which is not a bug or regression.
+Project Status
+==============
+This repository is a maintained fork of the original Hacker News Enhancement Suite.
+The codebase now targets Manifest V3 for Chromium-based browsers. Firefox support
+is blocked until Mozilla enables service-worker powered MV3 extensions; follow the
+instructions below to load the extension manually in Chrome, Edge, or other
+Chromium browsers.
 
 
 Hacker News Enhancement Suite
 =============================
 
-A Hacker News extension for Firefox and Chrome which changes lots of things.
+A Hacker News extension for Chrome and Chromium browsers which changes lots of
+things.
+
+Installation (Chrome / Edge)
+----------------------------
+1. Clone or download this repository.
+2. Run `bash zip.sh` or simply keep the folder unpacked.
+3. Visit `chrome://extensions`, enable *Developer mode*, click *Load unpacked*,
+   and select the repository directory (or upload the generated zip to the
+   Chrome Web Store if you maintain a listing).
+
+Firefox Support
+---------------
+Manifest V3 service workers are still behind Mozilla’s compatibility roadmap, so
+this fork is not yet installable from Firefox Add-ons. If you need MV2 support,
+use the upstream archive or keep an eye on Mozilla’s MV3 rollout.
 
 Features
 --------
@@ -18,7 +37,7 @@ Features
   * Link to parent
   * Display all comments on paginated threads
   * Highlight the original poster
-* Show and highlight new comments since you last view a thread
+* Show and highlight new comments since you last viewed a thread
 * Highlight links once clicked to more easily identify what you've recently visited
 * Redirect back to the front page upon hitting an expired link
 * Display how many times you've upvoted each user
@@ -34,14 +53,6 @@ Features
   * c - View comments in a new tab
   * b - Open both the comments and the story in new tabs
 * Tag users
-
-Firefox AMO link
-----------------
-https://addons.mozilla.org/en-US/firefox/addon/hnes/
-
-Chrome web store link
----------------------
-https://chrome.google.com/webstore/detail/bappiabcodbpphnojdiaddhnilfnjmpm
 
 TODO
 ----
@@ -60,6 +71,10 @@ I don't have enough karma to test down votes, creating polls, or topbar color
 Compatability
 -------
 I do not test this extension with any other extensions active on Hacker News so I cannot guarantee that it will play nice. If you come across an apparent bug please make sure that any other extension are disabled or please mention which ones are enabled in the bug report.
+
+Contributing
+------------
+See `AGENTS.md` for contributor guidelines, build commands, and testing advice tailored to this fork.
 
 License
 -------
