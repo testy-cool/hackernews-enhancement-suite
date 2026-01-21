@@ -1,6 +1,6 @@
 Project Status
 ==============
-This repository is a maintained fork of the original Hacker News Enhancement Suite.
+This repository is a maintained fork of the original Hacker News Enhancement Suite by [testy.cool](https://testy.cool).
 The codebase now targets Manifest V3 for Chromium-based browsers. Firefox support
 is blocked until Mozilla enables service-worker powered MV3 extensions; follow the
 instructions below to load the extension manually in Chrome, Edge, or other

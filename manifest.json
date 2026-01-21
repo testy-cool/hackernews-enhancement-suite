@@ -1,9 +1,10 @@
 {
     "name": "Hacker News Enhancement Suite",
     "short_name": "HNES",
-    "version": "1.6.0.3",
+    "version": "1.6.0.4",
     "description": "Hacker News Enhanced.",
     "manifest_version": 3,
+    "homepage_url": "https://testy.cool/tools/hnes",
     "background": {
       "service_worker": "background.js"
     },
