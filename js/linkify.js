@@ -29,7 +29,8 @@ function linkifyElement(container) {
     var html = tn.nodeValue
       .replace(/&/g, '&amp;')
       .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;');
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
 
     var replaced = html
       .replace(noProtocolUrl, '$1<a href="http://$2">$2</a>$3')
