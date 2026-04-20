@@ -1,7 +1,7 @@
 {
     "name": "Hacker News Enhancement Suite",
     "short_name": "HNES",
-    "version": "1.6.0.4",
+    "version": "1.7.0",
     "description": "Enhance Hacker News with collapsible comments, GitHub star counts, keyboard shortcuts, user tags, new comment tracking, and a modern UI.",
     "manifest_version": 3,
     "homepage_url": "https://testy.cool/tools/hnes",
@@ -38,9 +38,7 @@
         "all_frames": true,
         "css": [ "style.css" ],
         "js": [
-          "js/jquery-3.2.1.min.js",
-          "js/linkify/jquery.linkify-1.0.js",
-          "js/linkify/plugins/jquery.linkify-1.0-twitter.js",
+          "js/linkify.js",
           "js/hn.js"],
         "matches": [
           "http://news.ycombinator.com/*",
@@ -55,7 +53,7 @@
       {
         "matches": ["http://hckrnews.com/*"],
         "run_at": "document_end",
-        "js": ["js/jquery-3.2.1.min.js", "js/hn.js"]
+        "js": ["js/hn.js"]
       }
     ],
     "web_accessible_resources": [
